@@ -12,7 +12,7 @@ FORM get_data.
          dmbtr,
          bewar
     FROM bseg
-    INTO CORRESPONDING FIELDS OF TABLE @it_bill
+    INTO CORRESPONDING FIELDS OF TABLE @it_bill 
     WHERE saknr NE ''
     AND   gjahr EQ @lc_currentyear
     AND   bukrs EQ @lc_companycode.
